@@ -2,13 +2,51 @@
 <html>
 <head>
 	<title>you were too late</title>
+<style>
+.btn {
+  border: none;
+  background-color: none;
+  padding: 0px 0px;
+  font-size: 15px;
+  color:blue;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+</style>
+
+<script type = "text/javascript">
+  function showPicture() {
+    var sourceOfPicture = "snoozed.jpg";
+    var img = document.getElementById('bigpic')
+    img.src = sourceOfPicture.replace('90x90', '225x225');
+    img.style.display = "block";
+    img.style.margin = "0 auto"
+  } 
+</script>
+
 </head>
 <body>
+	<div>
 	<p style="text-align:center;">
 
 <font color="red" face="arial" size="5">Did you mean: </font><a href="https://functionsareoverrated.com"><font color="blue" face="arial" size="5">functions are </font><font color="blue" face="arial" size=5><b><i>overrated</i></b></font></a> 
-
 </p>
+<div>
+
+
+
+<div>
+
+	<p style="text-align:center;"> <font color="black" face="arial"> Search instead for 
+  <img style="display:none;" id="bigpic" src="bigpic" />
+  <button class="btn"  onclick="showPicture()">functions are values</button> </font>
+  </p>
+</div>
+
+
+
 </body>
 
 </html>
